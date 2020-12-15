@@ -8,12 +8,18 @@ const API_URL = "https://opentdb.com/api.php?amount=10";
 function App() {
   return (
     <div className="container">
-      This is where we're going to have the question.
-   <div>
-     <div>Answer 1</div>
-     <div>Answer 2</div>
-     <div>Answer 3</div>
-     <div>Answer 4</div>
+      <div className='bg-white text-purple-800 p-10 rounded-lg shadow-md'>
+      
+      <h2 className='text-2xl'>
+        This is where the question will be
+     </h2>
+      
+      </div>   
+   <div className=' flex  flex-wrap mt-4 justify-between'>
+     <button className="bg-white w-2/5 p-4 text-purple-800 font-semibold rounded shadow mb-4">Answer 1</button>
+     <button className="bg-white w-2/5 p-4 text-purple-800 font-semibold rounded shadow mb-4">Answer 2</button>
+     <button className="bg-white w-2/5 p-4 text-purple-800 font-semibold rounded shadow mb-4">Answer 3</button>
+     <button className="bg-white w-2/5 p-4 text-purple-800 font-semibold rounded shadow mb-4">Answer 4</button>
    </div>
     </div>
   );
