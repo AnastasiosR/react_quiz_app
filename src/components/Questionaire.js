@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 
 const Questionaire = ( {  handleAnswer,data: {question,correct_answer,incorrect_answers},
 }) => {
+
+//hide button
 const shuffledAnswer = [correct_answer, ... incorrect_answers].sort(() => Math.random() - 0.5); 
 
 return (
@@ -22,7 +24,7 @@ return (
    <button
    className = {
    `${
-       correct_answer === answer ? 'bg-purple-300' : 'bg-white'
+       correct_answer === answer ? 'bg-white' : 'bg-white'
     } p-4 text-purple-800 font-semibold rounder shadow `}
        onClick= {() => handleAnswer
      (answer)}>
